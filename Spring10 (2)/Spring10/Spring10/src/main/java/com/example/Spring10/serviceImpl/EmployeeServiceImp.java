@@ -1,5 +1,6 @@
 package com.example.Spring10.serviceImpl;
 
+import com.example.Spring10.Exception.EmployeeNotFoundException;
 import com.example.Spring10.Repository.EmployeeRepo;
 import com.example.Spring10.model.Employee;
 import com.example.Spring10.service.EmployeeService;
@@ -21,19 +22,10 @@ public class EmployeeServiceImp implements EmployeeService {
 
     @Override
     public Employee getEmployee(Long id) {
-        //return employeeRepo.findById(id).orElse(null);
-        try{
-            Optional<Employee> employee =employeeRepo.findById(id);
-            if (employee.isPresent()){
-                return employee.get();
-            }
-            throw new RuntimeException("user not found with id"+id);
-        } catch (Exception e) {
-            System.out.println("Service Error:"+e.getMessage());
-            return null;
-        }
-
+        return employeeRepo.findById(id).orElseThrow(() ->
+        new EmployeeNotFoundException("Employee not found with id:" + id));
     }
+
     @Override
     public Employee getAllEmployee(Employee emp) {
         return null;

@@ -25,17 +25,7 @@ public class Employeecontroller {
 
     @GetMapping("/{id}")
     public Employee getEmployee(@PathVariable Long id) {
-        try {
-            Optional<Employee> employee = employeeRepo.findById(id);
-            if (employee.isPresent()) {
-                return employee.get();
-            }
-            throw new RuntimeException("user not found with id" + id);
-        }
-        catch (RuntimeException e){
-            System.out.println("Exception is :"+e.getMessage());
-            return null;
-        }
+        return employeeserviceImp.getEmployee(id);
     }
 
     @PutMapping("/{id}")
