@@ -5,6 +5,8 @@ import com.example.Spring6.DTO.ProductRequestDTO;
 import com.example.Spring6.DTO.ProductResponseDTO;
 import com.example.Spring6.model.Product;
 
+import java.util.List;
+
 public interface ProductService {
     ProductResponseDTO saveProduct(ProductRequestDTO requestDTO);
     ProductResponseDTO getProduct(Long id);

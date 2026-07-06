@@ -1,12 +1,26 @@
 package com.example.Spring6.DTO;
 
 import com.example.Spring6.model.Product;
+import jakarta.validation.constraints.*;
 
 public class ProductResponseDTO {
     private Long id;
+
+    @NotBlank(message = "Product name is required")
+    @Size(min = 3, max = 50, message = "Product name must be between 3 and 50 characters")
     private String pname;
-    private int quantity;
-    private double price;
+
+    @NotNull(message = "Product quantity is required")
+    @Min(value = 1, message = "Quantity must be greater than 0")
+    private Integer quantity;
+
+    @NotNull(message = "Product price is required")
+    @DecimalMin(value = "1.0", message = "Price must be greater than 0")
+    private Double price;
+
+    @NotBlank(message = "Password is required")
+    @Size(min = 8, max = 20)
+    private String password;
 
 
     public ProductResponseDTO(Product product) {

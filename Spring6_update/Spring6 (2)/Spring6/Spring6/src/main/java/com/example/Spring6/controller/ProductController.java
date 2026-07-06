@@ -4,6 +4,7 @@ import com.example.Spring6.DTO.ProductRequestDTO;
 import com.example.Spring6.DTO.ProductResponseDTO;
 import com.example.Spring6.model.Product;
 import com.example.Spring6.service.ProductService;
+import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -26,7 +27,7 @@ public class ProductController {
 
     // New Method
     @PostMapping
-    public ResponseEntity<ProductResponseDTO>CreateProduct(@RequestBody ProductRequestDTO productRequestDTO) {
+    public ResponseEntity<ProductResponseDTO>CreateProduct(@Valid @RequestBody ProductRequestDTO productRequestDTO) {
         ProductResponseDTO savedProduct = productService.saveProduct(productRequestDTO);
         return ResponseEntity.status(HttpStatus.CREATED).body(savedProduct);
     }
@@ -53,7 +54,7 @@ public class ProductController {
     //new method
     @PutMapping("/{id}")
     public ResponseEntity<ProductResponseDTO> updateProduct(
-            @RequestBody ProductRequestDTO productRequestDTO,
+            @Valid @RequestBody ProductRequestDTO productRequestDTO,
             @PathVariable Long id) {
 
         ProductResponseDTO updatedProduct =

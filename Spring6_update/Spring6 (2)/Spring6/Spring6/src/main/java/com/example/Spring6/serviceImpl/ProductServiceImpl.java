@@ -5,6 +5,7 @@ import com.example.Spring6.DTO.ProductResponseDTO;
 import com.example.Spring6.model.Product;
 import com.example.Spring6.repository.ProductRepo;
 import com.example.Spring6.service.ProductService;
+import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
@@ -12,11 +13,27 @@ import org.springframework.stereotype.Service;
 @Service
 public class ProductServiceImpl implements ProductService {
 
-    @Autowired
-    private ProductRepo productRepo;
+   //@Autowired
+   //private ProductRepo productRepo;
 
     @Autowired
     private PasswordEncoder passwordEncoder;
+
+    //@Autowired
+    //private ModelMapper modelMapper;
+
+    private final ProductRepo productRepo;
+    private final ModelMapper modelMapper;
+
+    @Autowired
+    public ProductServiceImpl(ProductRepo productRepo,
+                              ModelMapper modelMapper,
+                              PasswordEncoder passwordEncoder) {
+        this.productRepo = productRepo;
+        this.modelMapper = modelMapper;
+        this.passwordEncoder = passwordEncoder;
+    }
+
 
    // @Override
     //public Product saveProduct(Product product) {
