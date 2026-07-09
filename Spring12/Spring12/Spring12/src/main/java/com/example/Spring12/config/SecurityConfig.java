@@ -22,9 +22,13 @@ public class SecurityConfig {
         http
                 .csrf(csrf -> csrf.disable())
 
+                // Required for H2 Console
+                .headers(headers -> headers.frameOptions(frame -> frame.disable()))
+
                 .authorizeHttpRequests(auth -> auth
                         .requestMatchers(
                                 "/",
+                                "/h2-console/**",
                                 "/v3/api-docs/**",
                                 "/swagger-ui/**",
                                 "/swagger-ui.html",

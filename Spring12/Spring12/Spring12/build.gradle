@@ -18,25 +18,60 @@ repositories {
 }
 
 dependencies {
-	implementation 'org.springframework.boot:spring-boot-starter-web'
-	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
-	implementation 'org.springframework.boot:spring-boot-starter-security'
-	implementation 'org.springframework.boot:spring-boot-starter-actuator'
-	implementation 'org.modelmapper:modelmapper:3.2.4'
 
-	runtimeOnly 'com.mysql:mysql-connector-j'
+		// ==========================
+		// Spring Boot Starters
+		// ==========================
+		implementation 'org.springframework.boot:spring-boot-starter'
+		implementation 'org.springframework.boot:spring-boot-starter-web'
+		implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+		implementation 'org.springframework.boot:spring-boot-starter-security'
+		implementation 'org.springframework.boot:spring-boot-starter-actuator'
 
-	compileOnly 'org.projectlombok:lombok'
-	annotationProcessor 'org.projectlombok:lombok'
+		// ==========================
+		// Swagger / OpenAPI
+		// ==========================
+		implementation 'org.springdoc:springdoc-openapi-starter-webmvc-ui:2.8.9'
 
-	developmentOnly 'org.springframework.boot:spring-boot-devtools'
+		// ==========================
+		// ModelMapper
+		// ==========================
+		implementation 'org.modelmapper:modelmapper:3.2.4'
 
-	implementation 'org.springdoc:springdoc-openapi-starter-webmvc-ui:2.8.9'
+		// ==========================
+		// Lombok
+		// ==========================
+		compileOnly 'org.projectlombok:lombok'
+		annotationProcessor 'org.projectlombok:lombok'
 
-	testImplementation 'org.springframework.boot:spring-boot-starter-test'
-	testImplementation 'org.springframework.security:spring-security-test'
+		// ==========================
+		// Development
+		// ==========================
+		developmentOnly 'org.springframework.boot:spring-boot-devtools'
 
-}
+		// ==========================
+		// Database Drivers
+		// ==========================
+
+		// MySQL
+		runtimeOnly 'com.mysql:mysql-connector-j'
+
+		// PostgreSQL (Works for Neon as well)
+		runtimeOnly 'org.postgresql:postgresql'
+
+		// Oracle
+		runtimeOnly 'com.oracle.database.jdbc:ojdbc11'
+
+		// H2 Database
+		runtimeOnly 'com.h2database:h2'
+
+		// ==========================
+		// Testing
+		// ==========================
+		testImplementation 'org.springframework.boot:spring-boot-starter-test'
+		testImplementation 'org.springframework.security:spring-security-test'
+		testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+	}
 
 tasks.named('test') {
 	useJUnitPlatform()
