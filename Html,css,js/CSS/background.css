@@ -1,0 +1,22 @@
+section{
+    /* color: aliceblue; */
+    /* background-color: aqua; */
+    /* background-image:url('./messi.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; */
+
+    /* background:linear-gradient(to top,red,yellow,blue); */
+    /* background: radial-gradient(black,red,blue); */
+    background: radial-gradient(circle at bottom,
+    red,
+    orange,
+    yellow,
+    green,
+    cyan,
+    blue,
+    indigo,
+    violet);
+
+}

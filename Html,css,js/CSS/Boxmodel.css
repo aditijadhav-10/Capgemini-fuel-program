@@ -1,0 +1,26 @@
+h1{
+   border: solid red; 
+   
+    /* border-bottom: 5px dotted blue;
+    border-left: 5px double pink;
+    border-right: 5px dashed maroon;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;  */
+
+    /* padding-top: 50px;
+    padding-right: 100px;
+    padding-left: 200px;
+    padding-bottom: 200px; */
+    /* padding:50px,100px,30px,200px ; */
+    /* padding:50px 100px 300px ;  */
+    padding:50px;
+
+
+
+    /* margin-top: 50px;
+    margin-left: 100px;
+    margin-bottom: 30px;
+    margin-right: 200px; */
+
+    margin: 50px 100px 30px 200px;
+}

@@ -1,0 +1,21 @@
+/* *{
+    background-color: black;
+    color:aqua;
+}
+h2{
+    background-color: azure;
+    color: black;
+}
+#selector{
+    background-color: beige;
+    color:blue;
+}
+.selec{
+    background-color: blanchedalmond;
+    color: brown;
+} */
+h2,#selector,.selec{
+    background-color: antiquewhite;
+    color: aquamarine;
+    
+}
