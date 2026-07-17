@@ -1,0 +1,159 @@
+@font-face {
+    font-family: "Aditi";
+    src: url("./assets/fonts/dm-mono/DMMono-Regular.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Aditi";
+}
+
+body {
+    display: flex;
+    background-color: #f7f4ef;
+}
+
+.Section1 {
+    width: 15vw;
+    height: 100%;
+    border: 2px solid red;
+    padding: 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    width: 100%;
+    height: 50px;
+}
+
+.sub-title {
+    color: rgb(231, 171, 98);
+    font-style: italic;
+}
+
+.title {
+    color: black;
+    font-size: 20px;
+}
+
+nav {
+    margin-top: 30px;
+    border: solid; 
+    color: #f7f4ef;
+    background-color: #f7f4ef;
+    height: 500px;
+    width: 100%;
+}
+
+nav a {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    color: black;
+    padding: 12px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+nav a img {
+    width: 22px;
+    height: 22px;
+}
+
+nav a:hover {
+    background-color:#f7f4ef;
+}
+
+section article{
+    align-items: end;
+}
+.temperature {
+    height: 100px;
+    width: 100%;
+    background-color: rgb(228, 202, 98);
+    border-radius: 20px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 20px;
+    box-sizing: border-box;
+    position: relative;
+
+
+    
+}
+
+.tempearture_text p {
+    font-size: x-small;
+    margin: 3px 0;
+}
+
+.temperature img {
+    right: 0;
+    width: 60px;
+    height: 60px;
+}
+
+.temperaturelow{
+    width: 100%;
+    padding-bottom: 20px;
+    border-bottom: 1px solid black;
+
+}
+.footerwheather{
+    margin-top: 30px;
+    font-size: 12px;
+    color: #777;
+    line-height: 20px;
+}
+main{
+    border:solid blue ;
+    height: 100%;
+    width: 80vw;
+}
+.sec1{
+    border: solid yellow;
+    height: 10vh;
+}
+.sec2{
+    border: solid green;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.sec3{
+    border: solid blueviolet;
+    height: 30vh;
+}
+.middle2card{
+    border: solid plum;
+    height: 300px;
+    background-color: greenyellow;
+    width: 300px;
+}
+.middleDiv1{
+    background-color: aqua;
+    position: absolute;
+    right: 50%;
+    transform: rotate(80deg);
+}
+.middleDiv2{
+    background-color: brown;
+    position: absolute;
+    left: 47%;
+    transform: rotate(-80deg);
+}
+
+

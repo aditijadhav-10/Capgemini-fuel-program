@@ -1,0 +1,167 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+header{
+    height:80px;
+    border-bottom:1px solid #ddd;
+}
+
+nav{
+    height:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 40px;
+}
+
+/* Left Navbar */
+
+.leftNavbar{
+    display:flex;
+    align-items:center;
+    gap:30px;
+}
+
+.leftNavbar a{
+    text-decoration:none;
+    color:black;
+    font-size:16px;
+    font-weight:bold;
+    letter-spacing:1px;
+}
+
+.leftNavbar a:hover{
+    color:#00754A;
+}
+
+/* Right Navbar */
+
+.rightNavbar{
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+
+.store{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    font-size:16px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+.store:hover{
+    color:#00754A;
+}
+
+.btn-signin{
+    border:1px solid black;
+    background:white;
+    color:black;
+    padding:8px 18px;
+    border-radius:25px;
+    font-size:15px;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+.btn-signin:hover{
+    background:#f2f2f2;
+}
+
+.btn-joinNow{
+    border:1px solid black;
+    background:black;
+    color:white;
+    padding:8px 18px;
+    border-radius:25px;
+    font-size:15px;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+.btn-joinNow:hover{
+    background:#333;
+}
+
+/* Gray Section */
+
+.headerDiv{
+    width:95%;
+    height:100px;
+    margin:30px auto;
+    background:#106a1e;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.headerDiv h1{
+    color:white;
+    font-size:30px;
+    margin-right:30px;
+}
+
+.headerDiv button{
+    border:1px solid white;
+    background:transparent;
+    color:white;
+    padding:10px 20px;
+    border-radius:25px;
+    font-size:16px;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+.headerDiv button:hover{
+    background:white;
+    color:black;
+}
+
+main section{
+    height: 60vh;
+    display: flex;
+    margin: auto;
+    width: 95%;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+main section article{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    background-color: #006242;
+    color: white;
+}
+main section article img{
+    height: 100%;
+    width: 100%;
+}
+main section article h1{
+    margin: 100px 0 0 0;
+}
+main section article p{
+    margin: 20px 0 0 0;
+    padding: 0 130px;
+    font-size: x-large;
+    text-align: center;
+}
+main section article button{
+    margin: 20px 0 100px 0;
+    border-color: white;
+    padding: 7px 12px;
+    color: white;
+    background-color: transparent;
+    border-radius: 20px;
+    font-size: x-large;
+    font-weight: 900;
+}
+

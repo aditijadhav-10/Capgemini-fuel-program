@@ -1,0 +1,24 @@
+nav{
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+}
+div{
+    height: 30px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div:hover{
+    background-color: gray;
+    border-radius: 10px;
+}
+a{
+    background-color: gold;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+}

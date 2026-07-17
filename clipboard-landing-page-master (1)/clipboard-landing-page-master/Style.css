@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrapper{
+    font-family: 'Bai Jamjuree', sans-serif;
+    color: hsl(210, 10%, 33%);
+    line-height: 1.6;
+    
+}
+.headclass{
+    text-align: center;
+    border: solid white;
+    height: 100vh;
+    background: url("./images/bg-header-desktop.png")no-repeat top;
+    padding: 100px;
+}
+.headclass img{
+    margin-bottom: 30px;
+}
+
+.headclass h1{
+    font-size: xx-large;
+    margin-bottom: 20px;
+}
+
+.headclass p{
+    width: 500px;
+    margin: auto;
+    color: hsl(200, 7%, 75%);
+}
+
+.buttons{
+    margin-top: 40px;
+    margin-bottom: 85px
+}
+
+.buttons button{
+    border: none;
+    color: white;
+    padding: 15px 35px;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+main{
+    
+    border: solid white;
+    height: 100vh;
+    background-color: white;
+    display: flex;
+}
+
+.mainSec1
+{
+    margin :40px 130px 0px 40px
+
+}
+
+.mainSec2
+{
+    margin-top: 70px;
+    margin-right: 130;
+    
+
+}
+
+.secDiv{
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+
+article{
+    height: 100vh;
+    text-align: center;
+
+}
+.article-div1{
+    margin-top: 50px;
+    margin-bottom: 0px;
+}
+
+.supercharge-div{
+    text-align:center;
+    padding: 5px;
+}
+
+.divSec1 h1{
+    font-size:36px;
+    margin-bottom:15px;
+}
+
+.divSec1 p{
+    color:hsl(201,11%,66%);
+}
+
+.bodyartdiv{
+    display:flex;
+    justify-content:center;
+    gap:50px;
+    margin-top:80px;
+    margin-bottom: 80px;
+}
+
+
+    
+.ios-div{
+    height: 50vh;
+    text-align: center;
+   
+}
+footer{
+    border: solid violet;
+    height: 50vh;
+    background-color:violet;
+}

@@ -1,0 +1,136 @@
+@font-face {
+    font-family: "Aditi";
+    src: url("./assets/fonts/forum/Forum-Regular.ttf");
+}
+/* Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Aditi';
+}
+
+body{
+    font-family: "DMSans", sans-serif;
+    background-color: #f7f4ef;
+}
+
+/* Parent */
+.parent{
+    display: flex;
+    height: 100vh;
+}
+
+/* Sidebar */
+aside{
+    width: 25%;
+    background: #ffffff;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid #ddd;
+}
+
+/* Logo */
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 40px;
+}
+
+.logo img{
+    width: 35px;
+}
+
+.logo h2{
+    font-family: "Forum", serif;
+    font-size: 30px;
+    color: #9b5b2d;
+    font-weight: normal;
+}
+
+/* Navigation */
+.menu{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.menu a{
+    text-decoration: none;
+    color: #555;
+    padding: 12px 15px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.menu a:hover{
+    background: #f2f2f2;
+    color: #000;
+}
+
+/* Bottom Section */
+article{
+    margin-top: auto;
+}
+
+/* Weather Card */
+ .weather{
+    background: #c9a749;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.weather h4{
+    font-size: 12px;
+    color: #b3acac;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.weather h1{
+    font-size: 50px;
+    font-family: "Forum", serif;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+.weather p{
+    font-size: 14px;
+}
+
+/* Footer */
+.footer-info{
+    margin-top: 30px;
+    font-size: 12px;
+    color: #777;
+    line-height: 20px;
+}
+
+/* Main Section */
+main{
+    width: 78%;
+    padding: 50px;
+    background: #f7f4ef;
+}
+
+/* Heading */
+.sub-heading{
+    color: #888;
+    letter-spacing: 3px;
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+main h1{
+    font-family: "Forum", serif;
+    font-size: 60px;
+    font-weight: normal;
+    color: #222;
+}
+
+main h1 span{
+    color: #b5663d;
+    font-style: italic;
+} 

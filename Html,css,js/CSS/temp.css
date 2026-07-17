@@ -1,0 +1,25 @@
+section{
+    border: solid;
+    height: 90vh;
+    display: flex; 
+    /* align-items: center; */
+    justify-content:space-between;
+}
+.div1{
+    /* border: red; */
+    height: 200px;
+    width: 200px;
+    background-color:red;
+}
+.div2{
+    /* border: red; */
+    height: 200px;
+    width: 200px;
+    background-color:rgb(0, 255, 76);
+}
+.div3{
+    /* border: red; */
+    height: 200px;
+    width: 200px;
+    background-color:rgb(45, 15, 153);
+}

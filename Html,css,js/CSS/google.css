@@ -1,0 +1,83 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    background:white;
+}
+
+.container{
+    text-align:center;
+}
+
+.logo{
+    font-size:90px;
+    margin-bottom:30px;
+    font-weight:bold;
+}
+
+.blue{color:#4285F4;}
+.red{color:#EA4335;}
+.yellow{color:#FBBC05;}
+.green{color:#34A853;}
+
+.search-box{
+    width:650px;
+    max-width:90%;
+    border:1px solid #ddd;
+    border-radius:30px;
+    display:flex;
+    align-items:center;
+    padding:12px 20px;
+    gap:15px;
+    box-shadow:0 1px 6px rgba(0,0,0,0.2);
+}
+
+.search-box input{
+    flex:1;
+    border:none;
+    outline:none;
+    font-size:18px;
+}
+
+.search-box i{
+    font-size:20px;
+    cursor:pointer;
+}
+
+.fa-magnifying-glass{
+    color:gray;
+}
+
+.fa-microphone{
+    color:#4285F4;
+}
+
+.fa-camera{
+    color:#34A853;
+}
+
+.buttons{
+    margin-top:30px;
+}
+
+button{
+    padding:10px 20px;
+    margin:5px;
+    border:none;
+    background:#f8f9fa;
+    border-radius:5px;
+    cursor:pointer;
+    font-size:15px;
+}
+
+button:hover{
+    border:1px solid #ccc;
+}
