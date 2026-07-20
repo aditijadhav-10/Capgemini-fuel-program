@@ -1,0 +1,161 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial,sans-serif;
+    background:#fafafa;
+}
+
+.bg1{
+    width:350px;
+    height:700px;
+    background:linear-gradient(#e942ff);
+    border-radius:0 0 200px 200px;
+    position:fixed;
+    left:-30px;
+   
+}
+
+.bg2{
+    width:350px;
+    height:700px;
+    background:#f5f3f7;
+    border-radius:2000px 200px 0 0;
+    position:fixed;
+    right:20px;
+}
+
+.main{
+    width:1100px;
+    height:100vh;
+    margin:auto;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:150px;
+}
+
+.phone{
+    width:280px;
+    background:white;
+    padding:15px;
+    border-radius:25px;
+    box-shadow:0 10px 25px lightgray;
+}
+
+
+.header{
+    background:linear-gradient(#e942ff,#8838ff);
+    color:white;
+    display:flex;
+    align-items:center;
+    padding:10px;
+    border-radius:15px;
+}
+
+.header img{
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    margin-right:10px;
+}
+
+.user h4{
+    font-size:15px;
+}
+
+.user p{
+    font-size:12px;
+}
+
+
+.chat{
+    margin-top:15px;
+}
+
+.left{
+    width:70%;
+    background:#eee;
+    color:purple;
+    padding:8px;
+    margin-bottom:10px;
+    border-radius:10px;
+    font-size:13px;
+}
+
+.right{
+    width:70%;
+    background:white;
+    padding:8px;
+    margin-left:auto;
+    margin-bottom:10px;
+    border-radius:10px;
+    box-shadow:0 0 5px lightgray;
+    font-size:13px;
+}
+
+
+.dogs{
+    display:flex;
+    justify-content:flex-end;
+    gap:5px;
+    margin-bottom:10px;
+}
+
+.dogs img{
+    width:50px;
+    border-radius:10px;
+}
+
+
+.price{
+    background:linear-gradient(#e942ff);
+    color:white;
+    padding:10px;
+    border-radius:10px;
+    display:flex;
+    justify-content:space-between;
+    margin-bottom:10px;
+}
+
+.input{
+    display:flex;
+    margin-top:15px;
+}
+
+.input input{
+    flex:1;
+    padding:10px;
+    border:1px solid #ccc;
+    border-radius:20px;
+}
+
+.input button{
+    width:40px;
+    margin-left:10px;
+    border:none;
+    border-radius:50%;
+    background:#3e2753;
+    color:white;
+}
+
+.text{
+    width:450px;
+    text-align: center;
+}
+
+.text h1{
+    text-align: start;
+    font-size:40px;
+    color:#b48ed8;
+    margin-bottom:20px;
+}
+
+.text p{
+    text-align: start;
+    color:rgb(179, 173, 173);
+    line-height:1.8;
+}

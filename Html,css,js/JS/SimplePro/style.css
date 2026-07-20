@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav{
+    display: flex;
+    height: 50px;
+    justify-content: space-around;
+    align-items: center;
+}
+.formBox{
+    background-color: aqua;
+    height: 500px;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 35%;
+    display: none;
+}
+#close{
+    height: 50px;
+    width: 50px;
+    border-radius: 100px;
+    background-color: azure;
+    font-size: 50px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 5px;
+}
+.showForm{
+    display: block;
+}

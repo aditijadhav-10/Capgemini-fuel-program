@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.stock{
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+    background-color: white;
+    box-shadow: 2px 2px 40px;
+
+    align-items: flex-start;
+    width: 100%;
+    padding: 20px;
+    border-radius: 40px;
+
+}
+
+.stock:hover{
+    background-color: rgb(27, 24, 24);
+    color: white;
+}
+
+#wrapper{
+    background-color: gray;
+
+}
+
+img{
+    border-radius: 50px;
+    margin-left: 40px;
+}
+
+.information{
+    margin: 20px;
+
+}
+
+.information h3{
+    margin: 20px; 
+    align-items: start;
+}
+
